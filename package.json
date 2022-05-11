@@ -21,6 +21,9 @@
     "eject": "react-scripts eject",
     "eslint": "npx eslint 'src/**'",
     "eslint:fix": "npx eslint 'src/**' --fix",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "prepare": "husky install",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
@@ -45,6 +48,12 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
