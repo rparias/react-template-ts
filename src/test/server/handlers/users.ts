@@ -1,6 +1,6 @@
 import { rest } from "msw";
 
-import { EXAMPLE_API_URL } from "@/config/env"; // TODO: import and replace with API_URL
+import { EXAMPLE_API_URL } from "@/config/env";
 
 export const usersHandlers = [
 	rest.get(`${EXAMPLE_API_URL}/users`, (req, res, ctx) => {

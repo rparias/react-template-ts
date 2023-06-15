@@ -8,7 +8,7 @@
 			"type": "chrome",
 			"request": "launch",
 			"name": "Launch Chrome against localhost",
-			"url": "http://synlocalhost.aws.synapsegroupinc.com:8080",
+			"url": "http://mylocaldomain.com:8080",
 			"webRoot": "${workspaceFolder}"
 		}
 	]

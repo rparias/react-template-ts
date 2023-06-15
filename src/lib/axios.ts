@@ -3,7 +3,7 @@ import Axios from "axios";
 import { EXAMPLE_API_URL } from "@/config/env";
 
 export const axios = Axios.create({
-	baseURL: EXAMPLE_API_URL, // TODO: import and replace with API_URL
+	baseURL: EXAMPLE_API_URL,
 });
 
 axios.interceptors.response.use(

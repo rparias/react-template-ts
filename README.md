@@ -2,7 +2,7 @@
 
 ## 💻 Local Development Setup
 
-This project runs in localhost using the following domain: `synlocalhost.aws.synapsegroupinc.com`.
+This project runs in localhost using the following domain: `mylocaldomain.com`.
 You must modify your `/etc/hosts` file.
 
 In MacOS/Linux you can open the file with the next command:
@@ -20,14 +20,14 @@ c:\Windows\System32\Drivers\etc\hosts
 Once the file is opened, add the following line at the end:
 
 ```bash
-127.0.0.1       synlocalhost.aws.synapsegroupinc.com
+127.0.0.1       mylocaldomain.com
 ```
 
 ## 🚀 Run the app
 
 - Node version: +16
 - `npm install`: Install dependencies
-- `npm start`: Run in dev mode on [synlocalhost.aws.synapsegroupinc.com:8080](synlocalhost.aws.synapsegroupinc.com:8080)
+- `npm start`: Run in dev mode on [mylocaldomain.com:8080](mylocaldomain.com:8080)
 - `npm run build`: Generate production build
 
 ## ✅ Testing
