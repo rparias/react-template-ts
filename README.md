@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# React Template with Typescript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 Local Development Setup
 
-## Available Scripts
+This project runs in localhost using the following domain: `synlocalhost.aws.synapsegroupinc.com`.
+You must modify your `/etc/hosts` file.
 
-In the project directory, you can run:
+In MacOS/Linux you can open the file with the next command:
 
-### `npm start`
+```bash
+vim /etc/hosts
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In Windows you can open the notepad app and then open the file inside:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+c:\Windows\System32\Drivers\etc\hosts
+```
 
-### `npm test`
+Once the file is opened, add the following line at the end:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+127.0.0.1       synlocalhost.aws.synapsegroupinc.com
+```
 
-### `npm run build`
+## 🚀 Run the app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node version: +16
+- `npm install`: Install dependencies
+- `npm start`: Run in dev mode on [synlocalhost.aws.synapsegroupinc.com:8080](synlocalhost.aws.synapsegroupinc.com:8080)
+- `npm run build`: Generate production build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✅ Testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Unit tests
 
-### `npm run eject`
+`npm run test`: Run unit tests with Jest and React Testing Library
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔦 Linting
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm run lint`: Run linter
+- `npm run lint:fix`: Fix lint issues
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🌈 Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [TypeScript](https://www.typescriptlang.org)
+- [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured
+- [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the unit tests
+- [GitHub Action Workflows](https://github.com/features/actions) set up to run tests and linting on push
+- [Sass](https://sass-lang.com) to supercharge CSS with nested classes and more fun
+- [Redux Toolkit](https://redux-toolkit.js.org/tutorials/quick-start#usage-summary) for state management.
+- [.editorconfig](https://editorconfig.org) for sharing the IDE config
 
-## Learn More
+## 👌 Code Quality Standards
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Publishing this package we are committing ourselves to the following code quality standards:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 🤝 Respect **Semantic Versioning**: No breaking changes in patch or minor versions
+- 🤏 No surprises in transitive dependencies: Use the **bare minimum dependencies** needed to meet the purpose
+- 🎯 **One specific purpose** to meet without having to carry a bunch of unnecessary other utilities
+- ✅ **Tests** as documentation and usage examples
+- 📖 **Well documented ReadMe** showing how to install and use
+- ⚖️ **License favoring Open Source** and collaboration
+
+## 🔀 Related information
+
+This application was inspired by the [Bulletproff React Architecture](https://github.com/alan2207/bulletproof-react). Feel free to check it out and see more examples.

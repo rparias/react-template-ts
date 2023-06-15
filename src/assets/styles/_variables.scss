@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap";
+
+// fonts
+$font-lato: Lato, sans-serif;
+
+// colors
+$primary: #febc11 !default;
+$secondary: #2b2a6f !default;
+$white: #fff !default;
+$black: #0c0e16 !default;
+
+// color palette
+$colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"white": $white,
+	"black": $black,
+);
+
+// font sizes
+$base-font-size: 1rem !default;
+$font-size-xs: $base-font-size * 0.75 !default;
+$font-size-sm: $base-font-size * 0.875 !default;
+$font-size-lg: $base-font-size * 1.25 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// spacing
+$base-padding: 0.75rem !default;
+$base-margin: 0.75rem !default;
+
+// borders
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgb(0 0 0 / 10%) !default;

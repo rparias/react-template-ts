@@ -1,12 +1,11 @@
-import React from 'react'
-import './App.css'
+import { AppProvider } from "@/providers/app";
+import { AppRoutes } from "@/routes";
+import { store } from "@/state/store";
 
-const App: React.FC = (): JSX.Element => (
-  <div className="App">
-    <header className="App-header">
-      <h1>Hello World</h1>
-    </header>
-  </div>
-)
-
-export default App
+export function App() {
+	return (
+		<AppProvider store={store}>
+			<AppRoutes />
+		</AppProvider>
+	);
+}
